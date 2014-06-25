@@ -1,0 +1,1737 @@
+<!DOCTYPE html><html><head><title>README</title><meta http-equiv="Content-Type" content="text/html" charset="UTF-8"><link rel="stylesheet" media="all" href="./docco.css"></head><body><div id="container"><div id="background"></div><div id="jump_to">Jump To &hellip;<div id="jump_wrapper"><div id="jump_page"><a href="./index.html" class="source"><span class="file_name">README</span></a><a href="./exlib/bemjson2bemdecl.js.html" class="source "><span class="base_path">exlib / </span><span class="file_name">bemjson2bemdecl.js</span></a><a href="./exlib/deps.js.html" class="source "><span class="base_path">exlib / </span><span class="file_name">deps.js</span></a><a href="./exlib/tanker.js.html" class="source "><span class="base_path">exlib / </span><span class="file_name">tanker.js</span></a><a href="./lib/build-flow.js.html" class="source "><span class="base_path">lib / </span><span class="file_name">build-flow.js</span></a><a href="./lib/cache/cache-storage.js.html" class="source "><span class="base_path">lib / cache / </span><span class="file_name">cache-storage.js</span></a><a href="./lib/cache/cache.js.html" class="source "><span class="base_path">lib / cache / </span><span class="file_name">cache.js</span></a><a href="./lib/cli/cli.js.html" class="source "><span class="base_path">lib / cli / </span><span class="file_name">cli.js</span></a><a href="./lib/cli/help.js.html" class="source "><span class="base_path">lib / cli / </span><span class="file_name">help.js</span></a><a href="./lib/cli/make.js.html" class="source "><span class="base_path">lib / cli / </span><span class="file_name">make.js</span></a><a href="./lib/cli/server.js.html" class="source "><span class="base_path">lib / cli / </span><span class="file_name">server.js</span></a><a href="./lib/config/configurable.js.html" class="source "><span class="base_path">lib / config / </span><span class="file_name">configurable.js</span></a><a href="./lib/config/mode-config.js.html" class="source "><span class="base_path">lib / config / </span><span class="file_name">mode-config.js</span></a><a href="./lib/config/module-config.js.html" class="source "><span class="base_path">lib / config / </span><span class="file_name">module-config.js</span></a><a href="./lib/config/node-config.js.html" class="source "><span class="base_path">lib / config / </span><span class="file_name">node-config.js</span></a><a href="./lib/config/node-mask-config.js.html" class="source "><span class="base_path">lib / config / </span><span class="file_name">node-mask-config.js</span></a><a href="./lib/config/project-config.js.html" class="source "><span class="base_path">lib / config / </span><span class="file_name">project-config.js</span></a><a href="./lib/config/task-config.js.html" class="source "><span class="base_path">lib / config / </span><span class="file_name">task-config.js</span></a><a href="./lib/deps/deps-resolver.js.html" class="source "><span class="base_path">lib / deps / </span><span class="file_name">deps-resolver.js</span></a><a href="./lib/deps/deps.js.html" class="source "><span class="base_path">lib / deps / </span><span class="file_name">deps.js</span></a><a href="./lib/errors/target-not-found-error.js.html" class="source "><span class="base_path">lib / errors / </span><span class="file_name">target-not-found-error.js</span></a><a href="./lib/file-list.js.html" class="source "><span class="base_path">lib / </span><span class="file_name">file-list.js</span></a><a href="./lib/fs/async-fs.js.html" class="source "><span class="base_path">lib / fs / </span><span class="file_name">async-fs.js</span></a><a href="./lib/fs/async-require.js.html" class="source "><span class="base_path">lib / fs / </span><span class="file_name">async-require.js</span></a><a href="./lib/fs/dir-glob.js.html" class="source "><span class="base_path">lib / fs / </span><span class="file_name">dir-glob.js</span></a><a href="./lib/fs/drop-require-cache.js.html" class="source "><span class="base_path">lib / fs / </span><span class="file_name">drop-require-cache.js</span></a><a href="./lib/fs/require-or-eval.js.html" class="source "><span class="base_path">lib / fs / </span><span class="file_name">require-or-eval.js</span></a><a href="./lib/levels/level-builder.js.html" class="source "><span class="base_path">lib / levels / </span><span class="file_name">level-builder.js</span></a><a href="./lib/levels/level-plain.js.html" class="source "><span class="base_path">lib / levels / </span><span class="file_name">level-plain.js</span></a><a href="./lib/levels/level.js.html" class="source "><span class="base_path">lib / levels / </span><span class="file_name">level.js</span></a><a href="./lib/levels/levels.js.html" class="source "><span class="base_path">lib / levels / </span><span class="file_name">levels.js</span></a><a href="./lib/logger.js.html" class="source "><span class="base_path">lib / </span><span class="file_name">logger.js</span></a><a href="./lib/make.js.html" class="source "><span class="base_path">lib / </span><span class="file_name">make.js</span></a><a href="./lib/node.js.html" class="source "><span class="base_path">lib / </span><span class="file_name">node.js</span></a><a href="./lib/preprocess/borschik-preprocessor.js.html" class="source "><span class="base_path">lib / preprocess / </span><span class="file_name">borschik-preprocessor.js</span></a><a href="./lib/preprocess/css-preprocessor.js.html" class="source "><span class="base_path">lib / preprocess / </span><span class="file_name">css-preprocessor.js</span></a><a href="./lib/server/server-middleware.js.html" class="source "><span class="base_path">lib / server / </span><span class="file_name">server-middleware.js</span></a><a href="./lib/server/server.js.html" class="source "><span class="base_path">lib / server / </span><span class="file_name">server.js</span></a><a href="./lib/tech/base-tech.js.html" class="source "><span class="base_path">lib / tech / </span><span class="file_name">base-tech.js</span></a><a href="./lib/tech/chunks.js.html" class="source "><span class="base_path">lib / tech / </span><span class="file_name">chunks.js</span></a><a href="./lib/tech/file-assemble-tech.js.html" class="source "><span class="base_path">lib / tech / </span><span class="file_name">file-assemble-tech.js</span></a><a href="./lib/test/mocks/test-file-system.js.html" class="source "><span class="base_path">lib / test / mocks / </span><span class="file_name">test-file-system.js</span></a><a href="./lib/test/mocks/test-logger.js.html" class="source "><span class="base_path">lib / test / mocks / </span><span class="file_name">test-logger.js</span></a><a href="./lib/test/mocks/test-node.js.html" class="source "><span class="base_path">lib / test / mocks / </span><span class="file_name">test-node.js</span></a><a href="./lib/ui/build-graph.js.html" class="source "><span class="base_path">lib / ui / </span><span class="file_name">build-graph.js</span></a><a href="./lib/ui/colorize.js.html" class="source "><span class="base_path">lib / ui / </span><span class="file_name">colorize.js</span></a><a href="./techs/bemdecl-from-bemjson.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">bemdecl-from-bemjson.js</span></a><a href="./techs/bemdecl-from-deps-by-tech.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">bemdecl-from-deps-by-tech.js</span></a><a href="./techs/bemdecl-merge.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">bemdecl-merge.js</span></a><a href="./techs/bemdecl-provider.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">bemdecl-provider.js</span></a><a href="./techs/bemdecl-test.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">bemdecl-test.js</span></a><a href="./techs/borschik.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">borschik.js</span></a><a href="./techs/browser-js.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">browser-js.js</span></a><a href="./techs/css-borschik-chunks.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">css-borschik-chunks.js</span></a><a href="./techs/css-chunks.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">css-chunks.js</span></a><a href="./techs/css-ie-includes.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">css-ie-includes.js</span></a><a href="./techs/css-ie.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">css-ie.js</span></a><a href="./techs/css-ie6.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">css-ie6.js</span></a><a href="./techs/css-ie7.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">css-ie7.js</span></a><a href="./techs/css-ie8.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">css-ie8.js</span></a><a href="./techs/css-ie9.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">css-ie9.js</span></a><a href="./techs/css-includes.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">css-includes.js</span></a><a href="./techs/css-less.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">css-less.js</span></a><a href="./techs/css-stylus-with-nib.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">css-stylus-with-nib.js</span></a><a href="./techs/css-stylus.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">css-stylus.js</span></a><a href="./techs/css.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">css.js</span></a><a href="./techs/deps-merge.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">deps-merge.js</span></a><a href="./techs/deps-old.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">deps-old.js</span></a><a href="./techs/deps-provider.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">deps-provider.js</span></a><a href="./techs/deps-subtract.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">deps-subtract.js</span></a><a href="./techs/deps.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">deps.js</span></a><a href="./techs/file-copy.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">file-copy.js</span></a><a href="./techs/file-merge.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">file-merge.js</span></a><a href="./techs/file-provider.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">file-provider.js</span></a><a href="./techs/files.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">files.js</span></a><a href="./techs/html-from-bemjson-i18n-sync.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">html-from-bemjson-i18n-sync.js</span></a><a href="./techs/html-from-bemjson-i18n.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">html-from-bemjson-i18n.js</span></a><a href="./techs/html-from-bemjson.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">html-from-bemjson.js</span></a><a href="./techs/i18n-keysets-xml.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">i18n-keysets-xml.js</span></a><a href="./techs/i18n-lang-js-chunks.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">i18n-lang-js-chunks.js</span></a><a href="./techs/i18n-lang-js.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">i18n-lang-js.js</span></a><a href="./techs/i18n-merge-keysets.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">i18n-merge-keysets.js</span></a><a href="./techs/js-bembundle-component-i18n.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">js-bembundle-component-i18n.js</span></a><a href="./techs/js-bembundle-component.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">js-bembundle-component.js</span></a><a href="./techs/js-bembundle-page-i18n.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">js-bembundle-page-i18n.js</span></a><a href="./techs/js-bembundle-page.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">js-bembundle-page.js</span></a><a href="./techs/js-chunks.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">js-chunks.js</span></a><a href="./techs/js-expand-includes.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">js-expand-includes.js</span></a><a href="./techs/js-i18n.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">js-i18n.js</span></a><a href="./techs/js-includes.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">js-includes.js</span></a><a href="./techs/js-test.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">js-test.js</span></a><a href="./techs/js.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">js.js</span></a><a href="./techs/levels.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">levels.js</span></a><a href="./techs/node-js.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">node-js.js</span></a><a href="./techs/priv-js-i18n-all.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">priv-js-i18n-all.js</span></a><a href="./techs/priv-js-i18n.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">priv-js-i18n.js</span></a><a href="./techs/priv-js.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">priv-js.js</span></a><a href="./techs/pub-js-i18n.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">pub-js-i18n.js</span></a><a href="./techs/symlink.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">symlink.js</span></a><a href="./techs/vanilla-js.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">vanilla-js.js</span></a><a href="./techs/xsl-2lego.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">xsl-2lego.js</span></a><a href="./techs/xsl-convert2xml.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">xsl-convert2xml.js</span></a><a href="./techs/xsl-html5-i18n.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">xsl-html5-i18n.js</span></a><a href="./techs/xsl-html5.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">xsl-html5.js</span></a><a href="./techs/xsl.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">xsl.js</span></a><a href="./techs/xslt.js.html" class="source "><span class="base_path">techs / </span><span class="file_name">xslt.js</span></a></div></div></div><table cellpadding="0" cellspacing="0"><thead><tr><th class="docs"></th><th class="code"></th></tr></thead><tbody><tr id="section"><td class="docs"><h1>enb
+</h1><p>Faster BEM/BEViS assembler</p><h3>Version</h3><p>0.13.4</p><h3>Author</h3><p><span class="gravatar"><img src="http://www.gravatar.com/avatar/20be223831d5504c22f5c5d889e91055"/><span>Marat Dulin &lt;mdevils@yandex.ru&gt;</span></span></p><h3>Contributors</h3><p><span class="gravatar"><img src="http://www.gravatar.com/avatar/20be223831d5504c22f5c5d889e91055"/><span>Marat Dulin&lt;mdevils@yandex.ru&gt;</span></span></p><p>BEM Tools<undefined></p><h3>Dependencies </h3><ul><li><b>inherit </b><span>~2.1.0</span></li><li><b>vow </b><span>~0.3.9</span></li><li><b>vow-fs </b><span>~0.2.2</span></li><li><b>stylus </b><span>0.40.x</span></li><li><b>dom-js </b><span>0.0.9</span></li><li><b>connect </b><span>2.19.1</span></li><li><b>send </b><span>0.4.1</span></li><li><b>commander </b><span>1.1.1</span></li><li><b>mime </b><span>1.2.9</span></li><li><b>sibling </b><span>&gt;=0.0.3</span></li><li><b>borschik </b><span>1.0.0</span></li><li><b>madify </b><span>&gt;=0.0.1</span></li><li><b>mad </b><span>&gt;=0.4.0</span></li><li><b>js-yaml </b><span>2.1.0</span></li><li><b>puml-link </b><span>0.0.1</span></li></ul><p><h3>Stats</h3><pre class="code_stats">     100 filesDuplicate file check 110 files (106 known unique)Unique:      100 files                                          Counting:  100
+http://cloc.sourceforge.net v 1.55  T=0.5 s (210.0 files/s, 22382.0 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Javascript                     105            738           3074           7379
+-------------------------------------------------------------------------------
+SUM:                           105            738           3074           7379
+-------------------------------------------------------------------------------
+</pre></p></td><td id="content" class="code"><h1>ENB <a href="https://travis-ci.org/enb-make/enb"><img src="https://travis-ci.org/enb-make/enb.svg?branch=master" alt="Build Status" title="" /></a> <a href="https://coveralls.io/r/enb-make/enb"><img src="https://img.shields.io/coveralls/enb-make/enb.svg?branch=master" alt="Coverage Status" title="" /></a></h1>
+
+<p>Сборщик проектов. С помощью ENB можно собрать любой проект, который строится на модели node / target.</p>
+
+<p><strong>ВАЖНО:</strong> Конфигуратор для упрощения создания конфига: <a href="http://enb-make.info/config/">http://enb-make.info/config/</a>.</p>
+
+<p><strong>Возможности</strong></p>
+
+<ul>
+<li>Сборка проекта и конкретных таргетов в разных режимах (с помощью ENV-переменной <code>YENV</code>).</li>
+<li>Режим сервера как в виде самостоятельного express-сервера, так и в виде express-middleware.</li>
+</ul>
+
+<p><strong>Зачем нужен этот проект, если есть bem-tools?</strong></p>
+
+<p>ENB работает гораздо быстрее, чем bem-tools. Причем, как в режиме сборки, так и в режиме сервера.</p>
+
+<p><strong>Почему?</strong></p>
+
+<ul>
+<li>Гибкая система кэширования.</li>
+<li>Обмен промежуточными данными в процессе сборки.</li>
+<li>Разбиение технологий на более мелкие (избавляемся от повторной работы).</li>
+<li>Используются более быстрые библиотеки (например, https://github.com/dfilatov/jspromise вместо Q).</li>
+<li>Нет порядка выполнения технологий (технологии зависят от таргетов, а не друг от друга), технологии зачастую выполняются параллельно.</li>
+<li>Тяжелые синхронные технологии выделяются в субпроцессы.</li>
+</ul>
+
+<p><strong>Некоторые отличия от bem-tools</strong></p>
+
+<ul>
+<li>ENB (как платформа) свободна от идеологии BEM. Сбор префиксов не является частью платформы, а реализуется с помощью одной из технологий.</li>
+<li>Технологии в ENB не ограничены в том, каким образом они будут собирать те или иные таргеты.</li>
+<li>Все технологии настраиваемые (в большей или меньшей степени).</li>
+<li>ENB сложнее настроить для проекта. В нем нет готовых шаблонов make-файлов.</li>
+<li>В рамках ENB одна и та же технология может быть использована с разными опциями. Например, можно построить несколько разных <code>deps.js</code> в рамках одной ноды на основе различных <code>bemdecl.js</code>.</li>
+</ul>
+
+<p><strong>Как потестить?</strong></p>
+
+<p>Специально для этого я подготовил сборку project-stub на ENB: https://github.com/mdevils/project-stub</p>
+
+<p><strong>Пакеты для ENB</strong></p>
+
+<ul>
+<li>Сборка BEMHTML: https://github.com/enb-make/enb-bemhtml</li>
+<li>Модульность для нового bem-core: https://github.com/enb-make/enb-modules</li>
+<li>Интеграция для grunt: https://github.com/megatolya/grunt-enb</li>
+</ul>
+
+<h2>Благодарности</h2>
+
+<ul>
+<li>Дмитрию Филатову (@dfilatov). За <code>vow</code>, <code>vow-fs</code>, <code>inherit</code>, советы, поддержку и мотивацию.</li>
+<li>Дмитрию Ковалю (@smith). За помощь в сборке тестов, production-режима и здоровый скептицизм.</li>
+<li>Александру Тармолову (@hevil). За помощь с <code>git</code>, <code>modules</code>, поддержку и полезные ссылки.</li>
+<li>Вениамину Клещенкову (@benjamin). За помощь в отладке и доработке ENB, поддержку, советы и ревью.</li>
+<li>Сергею Бережному (@veged). За <code>borschik</code>, советы и правильные вопросы.</li>
+<li>Команде разработчиков bem-tools. За часть заимствованного кода.</li>
+<li>Егору Блинову (@escaton). За пулл-реквесты, идеи.</li>
+<li>Андрею Абрамову (@andrewblond). За пулл-реквесты.</li>
+</ul>
+
+<h2>Использование из командной строки</h2>
+
+<p>Предполагается, что вы установили <code>npm</code>-пакет <code>enb</code> и находитесь в корне проекта.</p>
+
+<p>Сборка всех страниц проекта:</p>
+
+<pre><code>
+./node_modules/.bin/enb make
+
+</code></pre>
+
+<p>Сборка всех страниц проекта со сбросом кэша:</p>
+
+<pre><code>
+./node_modules/.bin/enb make --no-cache
+
+</code></pre>
+
+<p>Сборка всех страниц проекта с построением графа сборки:</p>
+
+<pre><code>
+./node_modules/.bin/enb make --graph
+
+</code></pre>
+
+<p>Сборка конкретной страницы проекта:</p>
+
+<pre><code>
+./node_modules/.bin/enb make pages/index
+
+</code></pre>
+
+<p>Сборка конкретного файла:</p>
+
+<pre><code>
+./node_modules/.bin/enb make pages/index/index.html
+
+</code></pre>
+
+<p>Запуск в режиме сервера:</p>
+
+<pre><code>
+./node_modules/.bin/enb server
+
+</code></pre>
+
+<p>Отключение цветового форматирования при выводе прогресса в консоль:</p>
+
+<pre><code>
+NOCOLOR=1 ./node_modules/.bin/enb make
+
+</code></pre>
+
+<p>Установка лимита открытых файлов для асинхронных операций. Правильно выбранный лимит позволяет избежать <code>EMFILE</code>-ошибок:</p>
+
+<pre><code>
+ENB_FILE_LIMIT=100 ./node_modules/.bin/enb make
+
+</code></pre>
+
+<h2>Терминология</h2>
+
+<ul>
+<li>Target (таргет) — это цель для сборки. Например, таргетом может быть <code>index.js</code> в рамках ноды <code>pages/index</code>..</li>
+<li>Node (нода) — это папка, в которой находятся те или иные таргеты. Например, <code>pages/index</code>.</li>
+<li>Suffix (суффикс) — это расширение исходного или конечного файла. Например, <code>js</code>.</li>
+<li>Masked Target (замаскированный таргет) — это имя таргета, которое может содержать <code>?</code>. Знак <code>?</code> заменяется на имя ноды в процессе настройки технологии, а с помощью подстроки <code>{lang}</code> можно создать несколько копий технологии для каждого из языков, где <code>{lang}</code> заменится на аббревиатуру языка в каждой из копий технологии. Например, таргет <code>?.js</code> заменяется на <code>search.js</code>, если нода — <code>pages/search</code>. Такой подход удобен, когда мы настраиваем несколько нод через <code>nodeMask</code>.</li>
+<li>Make-файл — файл, в котором конфигурируется ENB для сборки проекта. Находится в папке <code>&lt;project_root&gt;/.enb/make.js</code>.</li>
+<li>Билдить — собирать, компилировать (используется в отношении таргетов).</li>
+</ul>
+
+<h2>Процесс сборки</h2>
+
+<ol>
+<li>Какие таргеты необходимо билдить <code>ENB</code> узнаёт из команды <code>enb make [target]</code>. Если вы запустили <code>enb make</code> без указания конкретного таргета, <code>ENB</code> будет собирать все таргеты, определенные в <code>make.js</code>.</li>
+<li><code>ENB</code> инициализирует ноды, участвующие в сборке указанных таргетов. В это время каждая нода спрашивает у технологий (которые регистрировались внутри ноды) список таргетов.</li>
+<li>Запускаются технологии, которые отвечают за те таргеты, которые необходимо билдить.</li>
+<li>В процессе выполнения технология может потребовать у ноды другие таргеты, необходимые для сборки (с помощью метода <code>requireSources</code>). В таком случае технология приостанавливается, нода запускает технологии, отвечающие за требуемые таргеты (если они не запущены) и после того, как технологии заканчивают сборку нужных таргетов, продолжает свою работу искомая технология.</li>
+<li>После того, как технология выполнила свою работу по сборке таргета, она оповещает об этом ноду (с помощью метода <code>resolveTarget</code>).</li>
+<li>Сборка завершается после того, как все необходимые таргеты собраны.</li>
+</ol>
+
+<h1>Как собрать проект - пошаговое руководство</h1>
+
+<ol>
+<li>Прописать в <code>package.json</code> проекта зависимость от пакета <code>enb</code> (желательно в виде ">=последняя_версия").</li>
+<li>Выполнить <code>npm install</code>.</li>
+<li><p>Проверить, что <code>ENB</code> установлен. Команда <code>node_modules/.bin/enb</code> должна выполниться без ошибок.
+4.
+Создать make-файл <code>.bem/enb-make.js</code> вида:</p>
+
+<pre><code>module.exports = function(config) {
+};
+</code></pre></li>
+<li><p>Проверить, что <code>ENB</code> работает. Команда <code>node_modules/.bin/enb make</code> должна выполниться без ошибок.
+6.
+Теперь нужно настроить ноды. Для примера, я приведу вариант настройки ноды <code>pages/index</code>.</p>
+
+<pre><code>module.exports = function(config) {
+  config.node('pages/index', function(nodeConfig) {
+  });
+};
+</code></pre>
+
+<p>Так объявляется нода в рамках make-платформы. В данный момент она не настроена, а лишь объявлена.
+7.
+Объявим таргеты, которые надо собрать для ноды:</p>
+
+<pre><code>module.exports = function(config) {
+  config.node('pages/index', function(nodeConfig) {
+    nodeConfig.addTargets(['_?.js', '_?.css']);
+  });
+};
+</code></pre>
+
+<p>Таргеты объявлены, но при попытке выполнить <code>node_modules/.bin/enb make</code> будет ошибка, т.к. не зарегистрированы технологии, которые могут предоставить таргеты.
+8.
+Зарегистрируем базовые технологии:</p>
+
+<pre><code>module.exports = function(config) {
+  config.node('pages/index', function(nodeConfig) {
+    nodeConfig.addTechs([
+      [ require('enb/techs/levels'), { levels: getLevels(config) } ],
+      [ require('enb/techs/file-provider'), { target: '?.bemdecl.js' } ],
+      require('enb/techs/deps-old'),
+      require('enb/techs/files')
+    ]);
+
+
+<pre><code>nodeConfig.addTargets(['_?.js', '_?.css']);
+</code></pre>
+
+  });
+};
+
+
+function getLevels(config) {
+  return [
+    {path: 'bem-bl/blocks-common', check: false},
+    {path: 'bem-bl/blocks-desktop', check: false},
+    {path: 'lego/blocks-common', check: false},
+    {path: 'lego/blocks-desktop', check: false},
+    'common.blocks',
+    'desktop.blocks'
+  ].map(function(levelPath) { return config.resolvePath(levelPath); });
+}
+</code></pre>
+
+<p>Чтобы не засорять конфиг ноды, функцию <code>getLevels</code> мы выносим в нижнюю часть файла.</p>
+
+<p>Рассмотрим каждую технологию:</p>
+
+<p><strong>enb/techs/levels</strong> — собирает информацию об уровнях переопределения проекта. Результат выполнения этой технологии необходим технологиям <code>enb/techs/deps</code>, <code>enb/techs/deps-old</code> и <code>enb/techs/files</code>. Для каждой ноды по умолчанию добавляется уровень <code>&lt;путь_к_ноде&gt;/blocks</code>. Например, для ноды <code>pages/index</code> — <code>pages/index/blocks</code>.</p>
+
+<p><strong>enb/techs/file-provider</strong> — сообщает make-платформе, что таргет (переданный в опции <code>target</code>) уже готов. В нашем случае, исходным файлом для сборки является <code>index.bemdecl.js</code>. Он лежит в репозитории и отдельная сборка для него не требуется.</p>
+
+<p><strong>enb/techs/deps-old</strong> — собирает <code>?.deps.js</code> (<code>index.deps.js</code>) на основе <code>index.bemdecl.js</code> и <code>index.levels</code>. Почему <code>deps-old</code>? В lego не хватает ряда зависимостей, поэтому ваш проект может не собраться с более быстрый технологией <code>deps</code> без модификации lego. Технология <code>deps-old</code> повторяет алгоритм сборки из <code>bem-tools</code> и нехватка зависимостей становится незаметной, как раньше.</p>
+
+<p><strong>enb/techs/files</strong> — собирает полный список файлов со всех уровней переопределения в том порядке, в котором они идут в финальном <code>index.deps.js</code>. Результат этой технологии может использоваться, например, в технологии <code>enb/techs/js</code>.</p></li>
+</ol>
+
+<p>9.
+  Регистрируем технологии, необходимые для сборки js и css.
+  </p>
+
+<pre><code>module.exports = function(config) {
+      config.node('pages/index', function(nodeConfig) {
+        nodeConfig.addTechs([
+          [ require('enb/techs/levels'), { levels: getLevels(config) } ],
+          [ require('enb/techs/file-provider'), { target: '?.bemdecl.js' } ],
+          require('enb/techs/deps-old'),
+          require('enb/techs/files'),
+          require('enb/techs/js'),
+          require('enb/techs/css')
+        ]);
+
+<pre><code>    nodeConfig.addTargets(['_?.js', '_?.css']);
+  });
+</code></pre>
+
+  };
+
+  function getLevels(config) {
+      return [
+        {path: 'bem-bl/blocks-common', check: false},
+        {path: 'bem-bl/blocks-desktop', check: false},
+        {path: 'lego/blocks-common', check: false},
+        {path: 'lego/blocks-desktop', check: false},
+        'common.blocks',
+        'desktop.blocks'
+      ].map(function(levelPath) { return config.resolvePath(levelPath); });
+  }
+</code></pre>
+
+<p>Теперь файлы <code>index.js</code> и <code>index.css</code> могут собираться с помощью технологий <code>enb/techs/js</code> и <code>enb/techs/css</code> соответственно.
+  Но мы регистрировали иные таргеты: <code>_?.js</code> (<code>_index.js</code>) и <code>_?.css</code> (<code>_index.css</code>). Для их сборки воспользуемся технологией <code>enb/techs/file-copy</code>.
+  </p>
+
+<pre><code>module.exports = function(config) {
+      config.node('pages/index', function(nodeConfig) {
+        nodeConfig.addTechs([
+          [ require('enb/techs/levels'), { levels: getLevels(config) } ],
+          [ require('enb/techs/file-provider'), { target: '?.bemdecl.js' } ],
+          require('enb/techs/deps-old'),
+          require('enb/techs/files'),
+          require('enb/techs/js'),
+          require('enb/techs/css'),
+          [ require('enb/techs/file-copy'), { sourceTarget: '?.js', destTarget: '_?.js' } ],
+          [ require('enb/techs/file-copy'), { sourceTarget: '?.css', destTarget: '_?.css' } ]
+        ]);
+
+<pre><code>    nodeConfig.addTargets(['_?.js', '_?.css']);
+  });
+</code></pre>
+
+  };
+
+  function getLevels(config) {
+      return [
+        {path: 'bem-bl/blocks-common', check: false},
+        {path: 'bem-bl/blocks-desktop', check: false},
+        {path: 'lego/blocks-common', check: false},
+        {path: 'lego/blocks-desktop', check: false},
+        'common.blocks',
+        'desktop.blocks'
+      ].map(function(levelPath) { return config.resolvePath(levelPath); });
+  }
+</code></pre>
+
+<p>Теперь можно выполнить команду <code>node_modules/.bin/enb make</code> и в папке <code>pages/index</code> будут столь нужные нам <code>_index.js</code> и <code>_index.css</code>.
+  Окей, мы получили результат, с которым можно работать. Но как же production-режим?</p>
+
+<p>10.
+  Разделяем сборку финальных файлов для разных режимов.
+  </p>
+
+<pre><code>module.exports = function(config) {
+      config.node('pages/index', function(nodeConfig) {
+        nodeConfig.addTechs([
+          [ require('enb/techs/levels'), { levels: getLevels(config) } ],
+          [ require('enb/techs/file-provider'), { target: '?.bemdecl.js' } ],
+          require('enb/techs/deps-old'),
+          require('enb/techs/files'),
+          require('enb/techs/js'),
+          require('enb/techs/css')
+        ]);
+
+<pre><code>    nodeConfig.mode('development', function(nodeConfig) {
+      nodeConfig.addTechs([
+        [ require('enb/techs/file-copy'), { sourceTarget: '?.js', destTarget: '_?.js' } ],
+        [ require('enb/techs/file-copy'), { sourceTarget: '?.css', destTarget: '_?.css' } ]
+      ]);
+    });
+
+    nodeConfig.mode('production', function(nodeConfig) {
+      nodeConfig.addTechs([
+        [ require('enb/techs/borschik'), { sourceTarget: '?.js', destTarget: '_?.js', minify: true } ],
+        [ require('enb/techs/borschik'), { sourceTarget: '?.css', destTarget: '_?.css', minify: true } ]
+      ]);
+    });
+
+    nodeConfig.addTargets(['_?.js', '_?.css']);
+  });
+</code></pre>
+
+  };
+
+  function getLevels(config) {
+      return [
+        {path: 'bem-bl/blocks-common', check: false},
+        {path: 'bem-bl/blocks-desktop', check: false},
+        {path: 'lego/blocks-common', check: false},
+        {path: 'lego/blocks-desktop', check: false},
+        'common.blocks',
+        'desktop.blocks'
+      ].map(function(levelPath) { return config.resolvePath(levelPath); });
+  }
+</code></pre>
+
+<p>Теперь для production-режима конечные файлы обрабатываются <a href="https://github.com/bem/borschik">Борщиком</a>. Production-режим запускается командой <code>YENV=production node_modules/.bin/enb make</code></p>
+
+<ol>
+<li>Сборка <code>js</code> и <code>css</code> работает. Если в вашем проекте присутствуют другие цели или мультиязычность, то можно продолжить чтение данной документации в поисках информации о небходимых технологиях.</li>
+<li>Собираем <code>node_modules/.bin/enb make</code>.</li>
+</ol>
+
+<h1>Настройка сборки</h1>
+
+<pre><code>module.exports = function(config) {
+
+  // Языки для проекта.
+  config.setLanguages(['ru', 'en']);
+
+  // Добавление набора нод в сборку.
+  config.nodes('pages/*');
+
+  // Добавление ноды в сборку + конфигурирование ноды.
+  config.node('pages/index', function(nodeConfig) {
+    // Переопределение языков для конкретной ноды.
+    nodeConfig.setLanguages(['ru']);
+
+<pre><code>// Добавление одной технологии с опциями.
+nodeConfig.addTech([ require('enb/techs/file-provider'), { target: '?.bemdecl.js' } ]);
+
+// Добавление нескольких технологий.
+nodeConfig.addTechs([
+  [ require('enb/techs/levels'), {
+    levels: [
+      'common.blocks',
+      'desktop.blocks'
+    ].map(function(config) { return config.resolvePath(level); }) // Резолвинг путей от корня проекта.
+  }],
+  require('enb/techs/deps'),
+  require('enb/techs/files'),
+
+  // Добавление технологии с опциями
+  [ require('enb/techs/js'), { target: '?.new.js' } ],
+  require('enb/techs/css')
+]);
+
+// Добавление одного таргета.
+nodeConfig.addTarget('?.css');
+
+// Добавление нескольких таргетов.
+nodeConfig.addTargets(['?.css', '?.js']);
+</code></pre>
+
+  });
+
+  // Настройки для режима development.
+  config.mode('development', function() {
+    // Настройка нод по маске (regex).
+    config.nodeMask(/pages\/.*/, function(nodeConfig) {
+      nodeConfig.addTechs([
+        [ require('enb/techs/file-copy'), { sourceTarget: '?.css', destTarget: '_?.css'} ],
+        [ require('enb/techs/file-copy'), { sourceTarget: '?.js', destTarget: '_?.js'} ]
+      ]);
+    });
+  });
+
+  // Настройки для режима production.
+  config.mode('production', function() {
+    // Настройка нод по маске (regex).
+    config.nodeMask(/pages\/.*/, function(nodeConfig) {
+      nodeConfig.addTechs([
+        [ require('enb/techs/borschik'), { sourceTarget: '?.css', destTarget: '_?.css'} ],
+        [ require('enb/techs/borschik'), { sourceTarget: '?.js', destTarget: '_?.js'} ]
+      ]);
+    });
+  });
+
+  // Регистрация таска.
+  config.task('i18n.get', function(task) {
+    // Выполнение shell-команды.
+    return task.shell('./blocks/lego/tools/get-tanker.js');
+  });
+
+  // Установка переменных среды для shell-команд.
+  config.setEnv({
+      PRJ_ROOT        : config.resolvePath(), // Получение абсолютного пути к папке с проектом.
+      TANKER_HOST     : 'tanker-test.yandex-team.ru',
+      TANKER_PRJ      : 'super-project',
+      TANKER_PRJ_REV  : 'master'
+  });
+};
+</code></pre>
+
+<h1>Автоматизация с помощью express</h1>
+
+<p>При разработке <code>nodejs</code>-приложений на базе <code>express</code> можно сильно упростить использование <code>enb</code> в <code>development</code>-режиме.</p>
+
+<p>Суть в том, что можно забыть о пересборке проекта, о других портах для статики и т.п. Можно просто отправлять в <code>ENB</code>
+запросы на сборку тогда, когда это необходимо. То есть, когда вы открываете в браузере свой проект.</p>
+
+<p>Для этого можно воспользоваться <code>express</code>-совместимым <code>middleware</code>. Его возвращает метод <code>createMiddleware</code> модуля
+<code>lib/server/server-middleware</code>.</p>
+
+<pre><code>/**
+ * @param {Object} options
+ * @param {String} options.cdir Корневая директория проекта.
+ * @param {Boolean} options.noLog Не логгировать в консоль процесс сборки.
+ * @returns {Function}
+ */
+module.exports.createMiddleware = function(options) { /* ... */ };
+</code></pre>
+
+<p>Пример использования:</p>
+
+<pre><code>app
+    .use(require('enb/lib/server/server-middleware').createMiddleware())
+    .get('/', function (req, res) {
+        /* ... */
+    });
+</code></pre>
+
+<h1>Сборка по требованию</h1>
+
+<p>Помимо упрощения сборки статики в <code>dev</code>-режиме с помощью <code>ENB</code> в <code>express</code>-приложениях,
+можно собирать по требованию различные ресурсы, например, шаблоны.</p>
+
+<p>Если <code>nodejs</code> приложению в процессе работы требуется собирать шаблоны или локализацию (или что-нибудь еще),
+то можно воспользоваться методом <code>createBuilder</code> модуля <code>lib/server/server-middleware</code>.</p>
+
+<pre><code>/**
+ * @param {Object} options
+ * @param {String} options.cdir Корневая директория проекта.
+ * @param {Boolean} options.noLog Не логгировать в консоль процесс сборки.
+ * @returns {Function}
+ */
+module.exports.createBuilder = function(options) { /* ... */ };
+</code></pre>
+
+<p>Пример использования:</p>
+
+<pre><code>var enbBuilder = require('enb/lib/server/server-middleware').createBuilder();
+var dropRequireCache = require('enb/lib/fs/drop-require-cache');
+app
+    .get('/', function (req, res, next) {
+        var bemhtmlFilePath = 'pages/index/index.bemhtml.js';
+        enbBuilder(bemhtmlFilePath).then(function() {
+            var bemhtmlAbsFilePath = process.process.cwd() + '/' + bemhtmlFilePath;
+            dropRequireCache(require, bemhtmlAbsFilePath);
+            var bemhtml = require(bemhtmlAbsFilePath);
+            res.end(bemhtml.BEMHTML.apply({block: 'b-page', content: 'Hello World'}));
+            next();
+        }, next);
+    });
+</code></pre>
+
+<h2>Сборка merged (common) бандла</h2>
+
+<blockquote>
+  <p>Merged бандл — это бандл, который объединяет в себе декларации всех бандлов уровня. Соответственно по такой объединенной декларации собираются и объединенные конечные файлы. Например, css будет включать в себе все стили, используемые всеми бандлами.</p>
+  
+  <p>Merged бандл может быть полезен, например, если вы хотите использовать общие файлы статики (js, css) для нескольких страниц проекта.
+   (c) bem.info</p>
+</blockquote>
+
+<p>Одним из решений может быть:</p>
+
+<ol>
+<li><p>Проход по всем нодам и копирование deps в общую (<code>common</code>) папку (см. <code>deps-provider</code>);</p></li>
+<li><p>Мердж всех депсов в один (см. <code>deps-merge</code>).</p></li>
+</ol>
+
+<p>Разберем на примере:</p>
+
+<p>Предположим, есть 3 ноды:</p>
+
+<ul>
+<li><code>pages/index</code></li>
+<li><code>pages/search</code></li>
+<li><code>pages/order</code></li>
+</ul>
+
+<p>У каждой страницы свои уникальными стили и скрипты. Нам нужно собрать общий <code>js</code> и <code>css</code> с этих страниц и положить их внутрь <code>pages/common/</code> как <code>common.js</code> и <code>common.css</code> соответственно.</p>
+
+<pre><code>// Пробегаемся по всем директориям внутри "pages"
+// ...
+config.nodeMask(/pages\/.*/, function (nodeConfig) {
+    // Если текущая нода common
+    if (nodeConfig.getPath() === 'pages/common') {
+        nodeConfig.addTechs([
+            [ require("enb/techs/levels"), { levels: getLevels() } ],
+            require("enb/techs/files"),
+
+<pre><code>        // Копируем депсы с каждоый страницы внутрь текущей ноды (pages/common)
+        [ require('enb/techs/deps-provider'), { sourceNodePath: 'pages/index', depsTarget: 'index.deps.js' } ],
+        [ require('enb/techs/deps-provider'), { sourceNodePath: 'pages/search', depsTarget: 'search.deps.js' } ],
+        [ require('enb/techs/deps-provider'), { sourceNodePath: 'pages/order', depsTarget: 'order.deps.js' } ],
+
+        // Склеиваем наши депсы в один (common.deps.js)
+        [ require('enb/techs/deps-merge'), { depsSources: ['index.deps.js', 'search.deps.js', 'order.deps.js'] } ],
+
+        require("enb/techs/js"),
+        require("enb/techs/css"),
+        [ require("enb/techs/css"), {target: '?.ie9.css', sourceSuffixes: ['css', 'ie9.css'] } ]
+    ]);
+    // Собираем необходимые файлы
+    nodeConfig.addTargets(["_?.js", "_?.css", "_?.ie9.css"]);
+} else {
+    nodeConfig.addTechs([
+        [ require("enb/techs/levels"), { levels: getLevels() } ],
+        [ require("enb/techs/file-provider"), { target: "?.bemjson.js" } ],
+        require("enb/techs/bemdecl-from-bemjson"),
+        require("enb/techs/deps-old"),
+        require("enb/techs/files"),
+        require("enb-bemhtml/techs/bemhtml"),
+        require("enb/techs/html-from-bemjson"),
+        require("enb/techs/js"),
+        [ require("enb/techs/i18n-merge-keysets"), { lang: "all" }],
+        [ require("enb/techs/i18n-merge-keysets"), { lang: "{lang}" }],
+        [ require("enb/techs/i18n-lang-js"), { lang: "all" } ],
+        [ require("enb/techs/i18n-lang-js"), { lang: "{lang}" } ],
+        [ require("enb/techs/js-i18n"), { lang: "{lang}" } ],
+        require("enb/techs/css"),
+        [ require("enb/techs/css"), {target: '?.ie9.css', sourceSuffixes: ['css', 'ie9.css'] } ]
+    ]);
+    nodeConfig.addTargets(["_?.js", "_?.css", "_?.ie9.css", "?.html"]);
+}
+
+function getLevels() {
+    return [
+        {"path":"bem-bl/blocks-common","check":false},
+        {"path":"bem-bl/blocks-touch","check":false},
+        {"path":"blocks","check":true}
+    ].map(function(l) { return config.resolvePath(l); });
+}
+</code></pre>
+
+});
+// ...
+</code></pre>
+
+<p>Обратите внимание, директория <code>pages/common</code> должна сущестовать. Её можно создавать динамически.</p>
+
+<pre><code>// ...
+  // Создание директории common
+  if (!fs.existsSync('pages/common')) {
+      fs.mkdirSync('pages/common');
+  }
+// ...
+</code></pre>
+
+<p>Конечно, если у вас много страниц и постоянно добавляются новые, то лучше обрабатывать это динамически:</p>
+
+<p>Необходимо подключать модуль <code>fs</code></p>
+
+<pre><code>var fs = require('fs');
+//...
+if (nodeConfig.getPath() === 'touch.bundles/common') {
+    var pagesDeps = [],
+        addTechsAttrs = [
+            [ require("enb/techs/levels"), { levels: getLevels() } ],
+            require("enb/techs/files"),
+            require("enb/techs/js"),
+            require("enb/techs/css"),
+            require("enb/techs/css-ie9")
+        ];
+
+<pre><code>// Проходимся по существующим страницам
+fs.readdirSync('touch.bundles').map(function (page) {
+    if (page !== 'common') {
+        // Копируем депсы с каджой страницы внутрь common
+        addTechsAttrs.push([ require('enb/techs/deps-provider'), { sourceNodePath: 'touch.bundles/' + page, depsTarget: page + '.deps.js' } ]);
+
+        pagesDeps.push(page + '.deps.js');
+    }
+});
+
+// Мерджим все полученные депмы в один - common.deps.js
+addTechsAttrs.push([ require('enb/techs/deps-merge'), { depsSources: pagesDeps } ]);
+
+// прокидываем атрибуты
+nodeConfig.addTechs(addTechsAttrs);
+nodeConfig.addTargets(["_?.js", "_?.css", "_?.ie9.css"]);
+</code></pre>
+
+}
+//...
+</code></pre>
+
+<h1>Подробное описание актуальных технологий</h1>
+
+<p>В алфавитном порядке.</p>
+
+<p>Все технологии, включенные в пакет <code>ENB</code>, находятся в папке <code>techs</code> пакета. Подключаются из make-файла с помощью <code>require('enb/techs/&lt;tech-name&gt;')</code>. Например, <code>require('enb/techs/js')</code>. Подключаются к ноде указанием класса и опций: <code>nodeConfig.addTech([ require('enb/techs/&lt;tech-name&gt;'), {/* [options] */} ]);</code>, либо без опций: <code>nodeConfig.addTech(require('enb/techs/&lt;tech-name&gt;'));</code>.</p>
+
+<p>Если при настройке технологии в опциях указана подстрока <code>{lang}</code>, то будет создано столько копий технологии, сколько языков установлено для ноды или проекта (если у ноды не указаны языки).</p>
+
+<p>Например:</p>
+
+<pre><code>nodeConfig.setLanguages(['ru', 'en', 'tk']);
+nodeConfig.addTech([require('js-i18n'), { target: '?.{lang}.js', lang: '{lang}' }]);
+</code></pre>
+
+<p>Эквивалентно:</p>
+
+<pre><code>nodeConfig.addTech([require('js-i18n'), { target: '?.ru.js', lang: 'ru' }]);
+nodeConfig.addTech([require('js-i18n'), { target: '?.en.js', lang: 'en' }]);
+nodeConfig.addTech([require('js-i18n'), { target: '?.tk.js', lang: 'tk' }]);
+</code></pre>
+
+<h2>bemdecl-from-bemjson</h2>
+
+<p>Формирует <em>bemdecl</em> на основе <code>?.bemjson.js</code>.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>sourceTarget</strong> — Исходный bemjson-таргет. По умолчанию — <code>?.bemjson.js</code>.</li>
+<li><em>String</em> <strong>destTarget</strong> — Результирующий bemdecl-таргет. По умолчанию — <code>?.bemdecl.js</code>.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech(require('enb/techs/bemdecl-from-bemjson'));
+</code></pre>
+
+<h2>bemdecl-from-deps-by-tech</h2>
+
+<p>Формирует <em>bemdecl</em> на основе depsByTech-информации из <code>?.deps.js</code>.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>sourceTech</strong> — Имя исходной технологии. Обязательная опция.</li>
+<li><em>String</em> <strong>destTech</strong> — Имя конечной технологии. Обязательная опция.</li>
+<li><em>String</em> <strong>filesTarget</strong> — files-таргет, на основе которого получается список исходных файлов (его предоставляет технология <code>files</code>). По умолчанию — <code>?.files</code>.</li>
+<li><em>String</em> <strong>sourceSuffixes</strong> — суффиксы файлов, по которым строится <code>files</code>-таргет. По умолчанию — <code>'deps.js'</code>.</li>
+<li><em>String</em> <strong>target</strong> — Результирующий bemdecl-таргет. По умолчанию — <code>?.bemdecl.js</code>.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech(require('enb/techs/bemdecl-from-deps-by-tech'), {
+    sourceTech: 'js',
+    destTech: 'bemhtml'
+});
+</code></pre>
+
+<h2>bemdecl-merge</h2>
+
+<p>Формирует <em>bemdecl</em> с помощью объединения других bemdecl-файлов.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String[]</em> <strong>bemdeclSources</strong> — Исходные bemdecl-таргеты. Обязательная опция.</li>
+<li><em>String</em> <strong>bemdeclTarget</strong> — Результирующий bemdecl-таргет. По умолчанию — <code>?.bemdecl.js</code>.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech([ require('enb/techs/bemdecl-merge'), {
+  bemdeclSources: ['search.bemdecl.js', 'router.bemdecl.js'],
+  bemdeclTarget: 'all.bemdecl.js'
+} ]);
+</code></pre>
+
+<h2>bemdecl-provider</h2>
+
+<p>Копирует <em>bemdecl</em> в текущую ноду под нужным именем из другой ноды. Может понадобиться, например, для объединения bemdecl'ов.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>sourceNodePath</strong> — Путь исходной ноды с нужным bemdecl'ом. Обязательная опция.</li>
+<li><em>String</em> <strong>sourceTarget</strong> — Исходный bemdecl, который будет копироваться. По умолчанию — <code>?.bemdecl.js</code> (демаскируется в рамках исходной ноды).</li>
+<li><em>String</em> <strong>bemdeclTarget</strong> — Результирующий bemdecl-таргет. По умолчанию — <code>?.bemdecl.js</code> (демаскируется в рамках текущей ноды).</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech([ require('enb/techs/bemdecl-provider'), {
+  sourceNodePath: 'bundles/router',
+  sourceTarget: 'router.bemdecl.js',
+  bemdeclTarget: 'router.bemdecl.js'
+}]);
+</code></pre>
+
+<h2>borschik</h2>
+
+<p>Технология переехала в пакет <code>enb-borschik</code>.</p>
+
+<h2>browser-js</h2>
+
+<p>Технология переехала в пакет <code>enb-diverse-js</code>.</p>
+
+<h2>css</h2>
+
+<p>Склеивает <em>css</em>-файлы по deps'ам, обрабатывает инклуды и ссылки, сохраняет в виде <code>?.css</code>.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>target</strong> — Результирующий таргет. По умолчанию <code>?.css</code>.</li>
+<li><em>String</em> <strong>filesTarget</strong> — files-таргет, на основе которого получается список исходных файлов (его предоставляет технология <code>files</code>). По умолчанию — <code>?.files</code>.</li>
+<li><em>String</em> <strong>sourceSuffixes</strong> — суффиксы файлов, по которым строится <code>files</code>-таргет. По умолчанию — <code>'css'</code>.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech(require('enb/techs/css'));
+</code></pre>
+
+<h2>css-borschik-chunks</h2>
+
+<p>Технология переехала в пакет <code>enb-borschik</code>.</p>
+
+<h2>css-chunks</h2>
+
+<p>Технология переехала в пакет <code>enb-bembundle</code>.</p>
+
+<h2>css-ie</h2>
+
+<p>Технология устарела. Используйте технологию <code>css</code> с опцией <code>sourceSuffixes</code>.</p>
+
+<h2>css-ie6</h2>
+
+<p>Технология устарела. Используйте технологию <code>css</code> с опцией <code>sourceSuffixes</code>.</p>
+
+<h2>css-ie7</h2>
+
+<p>Технология устарела. Используйте технологию <code>css</code> с опцией <code>sourceSuffixes</code>.</p>
+
+<h2>css-ie8</h2>
+
+<p>Технология устарела. Используйте технологию <code>css</code> с опцией <code>sourceSuffixes</code>.</p>
+
+<h2>css-ie9</h2>
+
+<p>Технология устарела. Используйте технологию <code>css</code> с опцией <code>sourceSuffixes</code>.</p>
+
+<h2>css-ie-includes</h2>
+
+<p>Технология устарела. Используйте технологию <code>css-includes</code> с опцией <code>sourceSuffixes</code>.</p>
+
+<h2>css-includes</h2>
+
+<p>Собирает <em>css</em>-файлы по deps'ам инклудами, сохраняет в виде <code>?.css</code>. Может пригодиться в паре с ycssjs (как fastcgi-модуль).</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>target</strong> — Результирующий таргет. По умолчанию <code>?.css</code>.</li>
+<li><em>String</em> <strong>filesTarget</strong> — files-таргет, на основе которого получается список исходных файлов (его предоставляет технология <code>files</code>). По умолчанию — <code>?.files</code>.</li>
+<li><em>String</em> <strong>sourceSuffixes</strong> — суффиксы файлов, по которым строится <code>files</code>-таргет. По умолчанию — <code>'css'</code>.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech(require('enb/techs/css-includes'));
+</code></pre>
+
+<h2>css-less</h2>
+
+<p>Технология устарела и будет удалена.</p>
+
+<h2>css-stylus</h2>
+
+<p>Собирает <em>css</em>-файлы вместе со <em>styl</em>-файлами по deps'ам, обрабатывает инклуды и ссылки, сохраняет в виде <code>?.css</code>.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>target</strong> — Результирующий таргет. По умолчанию <code>?.css</code>.</li>
+<li><em>String</em> <strong>filesTarget</strong> — files-таргет, на основе которого получается список
+исходных файлов (его предоставляет технология <code>files</code>). По умолчанию — <code>?.files</code>.</li>
+<li><em>String</em> <strong>sourceSuffixes</strong> — суффиксы файлов, по которым строится <code>files</code>-таргет. По умолчанию — <code>['css', 'styl']</code>.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech(require('enb/techs/css-stylus'));
+</code></pre>
+
+<h2>css-stylus-with-nib</h2>
+
+<p>Собирает <em>css</em>-файлы вместе со <em>styl</em>-файлами по deps'ам, обрабатывает инклуды и ссылки, сохраняет в виде <code>?.css</code>.
+При сборке <em>styl</em>-файлов использует <a href="https://github.com/visionmedia/nib"><code>nib</code></a>.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>target</strong> — Результирующий таргет. По умолчанию <code>?.css</code>.</li>
+<li><em>String</em> <strong>filesTarget</strong> — files-таргет, на основе которого получается список
+исходных файлов (его предоставляет технология <code>files</code>). По умолчанию — <code>?.files</code>.</li>
+<li><em>String</em> <strong>sourceSuffixes</strong> — суффиксы файлов, по которым строится <code>files</code>-таргет. По умолчанию — <code>['css', 'styl']</code>.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech(require('enb/techs/css-stylus-with-nib'));
+</code></pre>
+
+<h2>deps</h2>
+
+<p>Быстро собирает <em>deps.js</em>-файл на основе <em>levels</em> и <em>bemdecl</em>, раскрывая зависимости.
+Сохраняет в виде <code>?.deps.js</code>.
+Следует использовать с осторожностью: в lego не хватает зависимостей,
+потому проект может собраться иначе, чем с помощью bem-tools.</p>
+
+<p>Имя <em>levels</em>-таргета в данный момент не настраивается (нет запросов на эту функцию).</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>bemdeclTarget</strong> — Исходный bemdecl. По умолчанию — <code>?.bemdecl.js</code>.</li>
+<li><em>String</em> <strong>levelsTarget</strong> — Исходный levels. По умолчанию — <code>?.levels</code>.</li>
+<li><em>String</em> <strong>depsTarget</strong> — Результирующий deps. По умолчанию — <code>?.deps.js</code>.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<p>Обычное использование:</p>
+
+<pre><code>nodeConfig.addTech(require('enb/techs/deps'));
+</code></pre>
+
+<p>Сборка специфического deps:</p>
+
+<pre><code>nodeConfig.addTech([ require('enb/techs/deps'), {
+  bemdeclTarget: 'search.bemdecl.js',
+  depsTarget: 'search.deps.js'
+} ]);
+</code></pre>
+
+<h2>deps-merge</h2>
+
+<p>Формирует <em>deps</em> с помощью объединения других deps-файлов.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String[]</em> <strong>depsSources</strong> — Исходные deps-таргеты. Обязательная опция.</li>
+<li><em>String</em> <strong>depsTarget</strong> — Результирующий deps-таргет. По умолчанию — <code>?.deps.js</code>.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech([ require('enb/techs/deps-merge'), {
+  depsSources: ['search.deps.js', 'router.deps.js'],
+  depsTarget: 'all.deps.js'
+} ]);
+</code></pre>
+
+<h2>deps-old</h2>
+
+<p>Собирает <em>deps.js</em>-файл на основе <em>levels</em> и <em>bemdecl</em>, раскрывая зависимости.
+Сохраняет в виде <code>?.deps.js</code>. Использует алгоритм, заимствованный из bem-tools.</p>
+
+<p>Имя <em>levels</em>-таргета в данный момент не настраивается (нет запросов на эту функцию).</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>bemdeclTarget</strong> — Исходный bemdecl. По умолчанию — <code>?.bemdecl.js</code>.</li>
+<li><em>String</em> <strong>levelsTarget</strong> — Исходный levels. По умолчанию — <code>?.levels</code>.</li>
+<li><em>String</em> <strong>depsTarget</strong> — Результирующий deps. По умолчанию — <code>?.deps.js</code>.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<p>Обычное использование:</p>
+
+<pre><code>nodeConfig.addTech(require('enb/techs/deps-old'));
+</code></pre>
+
+<p>Сборка специфического deps:</p>
+
+<pre><code>nodeConfig.addTech([ require('enb/techs/deps-old'), {
+  bemdeclTarget: 'search.bemdecl.js',
+  depsTarget: 'search.deps.js'
+} ]);
+</code></pre>
+
+<h2>deps-provider</h2>
+
+<p>Копирует <em>deps</em> в текущую ноду под нужным именем из другой ноды.
+Может понадобиться, например, для объединения deps'ов.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>sourceNodePath</strong> — Путь исходной ноды с нужным deps'ом. Обязательная опция.</li>
+<li><em>String</em> <strong>sourceTarget</strong> — Исходный deps, который будет копироваться. По умолчанию — <code>?.deps.js</code> (демаскируется в рамках исходной ноды).</li>
+<li><em>String</em> <strong>depsTarget</strong> — Результирующий deps-таргет. По умолчанию — <code>?.deps.js</code> (демаскируется в рамках текущей ноды).</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech([ require('enb/techs/deps-provider'), {
+  sourceNodePath: 'bundles/router',
+  sourceTarget: 'router.deps.js',
+  depsTarget: 'router.deps.js'
+} ]);
+</code></pre>
+
+<h2>deps-subtract</h2>
+
+<p>Формирует <em>deps</em> с помощью вычитания одного deps-файла из другого.
+Может применяться в паре с <code>deps-provider</code> для получения deps для bembundle.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>subtractFromTarget</strong> — Таргет, из которого вычитать. Обязательная опция.</li>
+<li><em>String</em> <strong>subtractWhatTarget</strong> — Таргет, который вычитать. Обязательная опция.</li>
+<li><em>String</em> <strong>depsTarget</strong> — Результирующий deps-таргет. По умолчанию — <code>?.deps.js</code>.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTechs([
+  [ require('enb/techs/deps'), { depsTarget: 'router.tmp.deps.js' } ],
+  [ require('enb/techs/deps-provider'), { sourceNodePath: 'pages/index', depsTarget: 'index.deps.js' }],
+  [ require('enb/techs/deps-subtract'), {
+    subtractWhatTarget: 'index.deps.js',
+    subtractFromTarget: 'router.tmp.deps.js',
+    depsTarget: 'router.deps.js'
+  } ]
+]);
+</code></pre>
+
+<h2>file-copy</h2>
+
+<p>Копирует один таргет в другой.
+Может, например, использоваться для построения <code>_?.css</code> из <code>?.css</code> для development-режима.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>sourceTarget</strong> — Исходный таргет. Обязательная опция.</li>
+<li><em>String</em> <strong>destTarget</strong> — Результирующий таргет. Обязательная опция.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech([ require('enb/techs/file-copy'), {
+  sourceTarget: '?.css',
+  destTarget: '_?.css'
+} ]);
+</code></pre>
+
+<h2>file-merge</h2>
+
+<p>Склеивает набор файлов в один.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String[]</em> <strong>sources</strong> — Список исходных таргетов. Обязательная опция.</li>
+<li><em>String</em> <strong>target</strong> — Результирующий таргет. Обязательная опция.</li>
+<li><em>String</em> <strong>divider</strong> — Строка для склеивания файлов. По умолчанию — "\n".</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech([ require('enb/techs/file-merge'), {
+    sources: ['?.bemhtml', '?.pre.js']
+    target: '?.js'
+} ]);
+</code></pre>
+
+<h2>file-provider</h2>
+
+<p>Предоставляет существующий файл для make-платформы.
+Может, например, использоваться для предоставления исходного <em>bemdecl</em>-файла.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>target</strong> — Таргет. Обязательная опция.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech([ require('enb/techs/file-provider'), { target: '?.bemdecl.js' } ]);
+</code></pre>
+
+<h2>files</h2>
+
+<p>Собирает список исходных файлов для сборки на основе <em>deps</em> и <em>levels</em>, предоставляет <code>?.files</code> и <code>?.dirs</code>.
+Используется многими технологиями, которые объединяют множество файлов из различных уровней переопределения в один.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>depsTarget</strong> — Исходный deps-таргет. По умолчанию — <code>?.deps.js</code>.</li>
+<li><em>String</em> <strong>levelsTarget</strong> — Исходный levels. По умолчанию — <code>?.levels</code>.</li>
+<li><em>String</em> <strong>filesTarget</strong> — Результирующий files-таргет. По умолчанию — <code>?.files</code>.</li>
+<li><em>String</em> <strong>dirsTarget</strong> — Результирующий dirs-таргет. По умолчанию — <code>?.dirs</code>.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech(require('enb/techs/files'));
+</code></pre>
+
+<h2>html-from-bemjson</h2>
+
+<p>Собирает <em>html</em>-файл с помощью <em>bemjson</em> и <em>bemhtml</em>.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>bemhtmlTarget</strong> — Исходный BEMHTML-файл. По умолчанию — <code>?.bemhtml.js</code>.</li>
+<li><em>String</em> <strong>bemjsonTarget</strong> — Исходный BEMJSON-файл. По умолчанию — <code>?.bemjson.js</code>.</li>
+<li><em>String</em> <strong>destTarget</strong> — Результирующий HTML-файл. По умолчанию — <code>?.html</code>.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech(require('enb/techs/html-from-bemjson'));
+</code></pre>
+
+<h2>html-from-bemjson-i18n</h2>
+
+<p>Собирает <em>html</em>-файл с помощью <em>bemjson</em>, <em>bemhtml</em>, <em>lang.all</em> и <em>lang.{lang}</em>.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>bemhtmlTarget</strong> — Исходный BEMHTML-файл. По умолчанию — <code>?.bemhtml.js</code>.</li>
+<li><em>String</em> <strong>bemjsonTarget</strong> — Исходный BEMJSON-файл. По умолчанию — <code>?.bemjson.js</code>.</li>
+<li><em>String</em> <strong>langAllTarget</strong> — Исходный langAll-файл. По умолчанию — <code>?.lang.all.js</code>.</li>
+<li><em>String</em> <strong>langTarget</strong> — Исходный lang-файл. По умолчанию — <code>?.lang.{lang}.js</code>. Если параметр lang не указан, берется первый из объявленных в проекте языков</li>
+<li><em>String</em> <strong>destTarget</strong> — Результирующий HTML-файл. По умолчанию — <code>?.{lang}.html</code>.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech(require('enb/techs/html-from-bemjson-i18n'));
+</code></pre>
+
+<h2>i18n-keysets-xml</h2>
+
+<p>Собирает <code>?.keysets.&lt;язык&gt;.xml</code>-файлы на основе <code>?.keysets.&lt;язык&gt;.js</code>-файлов.</p>
+
+<p>Используется для локализации xml-страниц, работающих в XScript (насколько я понимаю).</p>
+
+<p>Исходные и конечные таргеты в данный момент не настраиваются (нет запроса).</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>target</strong> — Результирующий таргет. По умолчанию — <code>?.keysets.{lang}.js</code>.</li>
+<li><em>String</em> <strong>lang</strong> — Язык, для которого небходимо собрать файл.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech([ require('i18n-keysets-xml'), { lang: '{lang}' } ]);
+</code></pre>
+
+<h2>i18n-lang-js</h2>
+
+<p>Собирает <code>?.lang.&lt;язык&gt;.js</code>-файлы на основе <code>?.keysets.&lt;язык&gt;.js</code>-файлов.</p>
+
+<p>Используется для локализации в JS с помощью BEM.I18N.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>target</strong> — Результирующий таргет. По умолчанию — <code>?.lang.{lang}.js</code>.</li>
+<li><em>String</em> <strong>lang</strong> — Язык, для которого небходимо собрать файл.</li>
+<li><em>String</em> <strong>keysetsTarget</strong> — Исходный таргет. По умолчанию — <code>?.keysets.{lang}.js</code>.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTechs([
+  [ require('i18n-lang-js'), { lang: 'all'} ],
+  [ require('i18n-lang-js'), { lang: '{lang}'} ],
+]);
+</code></pre>
+
+<h2>i18n-lang-js-chunks</h2>
+
+<p>Собирает <code>?.js-chunks.lang.&lt;язык&gt;.js</code>-файлы на основе <code>?.keysets.&lt;язык&gt;.js</code>-файлов.</p>
+
+<p>Используется для локализации в JS с помощью BEM.I18N при сборке bembundle.</p>
+
+<p>Исходные и конечные таргеты в данный момент не настраиваются (нет запроса).</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>target</strong> — Результирующий таргет. По умолчанию — <code>?.js-chunks.lang.{lang}.js</code>.</li>
+<li><em>String</em> <strong>lang</strong> — Язык, для которого небходимо собрать файл.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTechs([
+  [ require('i18n-lang-js-chunks'), { lang: 'all' } ],
+  [ require('i18n-lang-js-chunks'), { lang: '{lang}' } ],
+]);
+</code></pre>
+
+<h2>i18n-merge-keysets</h2>
+
+<p>Собирает <code>?.keysets.&lt;язык&gt;.js</code>-файлы на основе <code>*.i18n</code>-папок для указанных языков.</p>
+
+<p>Исходные и конечные таргеты в данный момент не настраиваются (нет запроса).</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>target</strong> — Результирующий таргет. По умолчанию — <code>?.keysets.{lang}.js</code>.</li>
+<li><em>String</em> <strong>lang</strong> — Язык, для которого небходимо собрать файл.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTechs([
+  [ require('i18n-merge-keysets'), { lang: 'all' } ],
+  [ require('i18n-merge-keysets'), { lang: '{lang}' } ]
+]);
+</code></pre>
+
+<h2>js</h2>
+
+<p>Склеивает <em>js</em>-файлы по deps'ам, сохраняет в виде <code>?.js</code>.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>target</strong> — Результирующий таргет. По умолчанию — <code>?.js</code>.</li>
+<li><em>String</em> <strong>filesTarget</strong> — files-таргет, на основе которого получается список исходных файлов (его предоставляет технология <code>files</code>). По умолчанию — <code>?.files</code>.</li>
+<li><em>String</em> <strong>sourceSuffixes</strong> — суффиксы файлов, по которым строится <code>files</code>-таргет. По умолчанию — <code>'js'</code>.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech(require('enb/techs/js'));
+</code></pre>
+
+<h2>js-bundle-component</h2>
+
+<p>Технология переехала в пакет <code>enb-bembundle</code>.</p>
+
+<h2>js-bembundle-component-i18n</h2>
+
+<p>Технология переехала в пакет <code>enb-bembundle</code>.</p>
+
+<h2>js-bundle-page</h2>
+
+<p>Технология переехала в пакет <code>enb-bembundle</code>.</p>
+
+<h2>js-bembundle-page-i18n</h2>
+
+<p>Технология переехала в пакет <code>enb-bembundle</code>.</p>
+
+<h2>js-chunks</h2>
+
+<p>Технология переехала в пакет <code>enb-bembundle</code>.</p>
+
+<h2>js-expand-includes</h2>
+
+<p>Обрабатывает инклуды в исходном <code>js</code>-файле и собирает результирующий файл. При раскрытии инклудов, если имя подключенного файла является таргетом, то ждет его выполнения.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>sourceTarget</strong> — Исходный JS-таргет. Обязательная опция.</li>
+<li><em>String</em> <strong>destTarget</strong> — Результирующий JS-таргет. Обязательная опция.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech([ require('enb/techs/js-expand-includes'), { sourceTarget: '?.run-tests.js', destTarget: '_?.run-tests.js' } ]);
+</code></pre>
+
+<h2>js-i18n</h2>
+
+<p>Собирает <code>js</code>-файл по deps'ам и добавляет в результат таргет <code>?.lang.&lt;язык&gt;.js</code>. Используется с технологией <code>i18n-lang-js</code>.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>filesTarget</strong> — files-таргет, на основе которого получается список исходных файлов (его предоставляет технология <code>files</code>). По умолчанию — <code>?.files</code>.</li>
+<li><em>String</em> <strong>sourceSuffixes</strong> — суффиксы файлов, по которым строится <code>files</code>-таргет. По умолчанию — <code>'js'</code>.</li>
+<li><em>String</em> <strong>target</strong> — Результирующий таргет. По умолчанию — <code>?.{lang}.js</code>.</li>
+<li><em>String</em> <strong>lang</strong> — Язык, для которого небходимо собрать файл.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech([ require('enb/techs/js-i18n'), { lang: '{lang}' } ]);
+</code></pre>
+
+<h2>js-includes</h2>
+
+<p>Собирает <em>js</em>-файлы по deps'ам инклудами, сохраняет в виде <code>?.js</code>. Может пригодиться в паре с ycssjs (как fastcgi-модуль).</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>filesTarget</strong> — files-таргет, на основе которого получается список исходных файлов (его предоставляет технология <code>files</code>). По умолчанию — <code>?.files</code>.</li>
+<li><em>String</em> <strong>sourceSuffixes</strong> — суффиксы файлов, по которым строится <code>files</code>-таргет. По умолчанию — <code>'js'</code>.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech(require('enb/techs/js-includes'));
+</code></pre>
+
+<h2>levels</h2>
+
+<p>Собирает информацию об уровнях переопределения проекта, предоставляет <code>?.levels</code>. Результат выполнения этой технологии необходим технологиям <code>enb/techs/deps</code>, <code>enb/techs/deps-old</code> и <code>enb/techs/files</code>.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>target</strong> — Результирующий таргет. По умолчанию — <code>?.levels</code>.</li>
+<li><em>(String|Object)[]</em> <strong>levels</strong> — Уровни переопределения. Полные пути к папкам с уровнями переопределения. Вместо строки с уровнем может использоваться объект вида <code>{path: '/home/user/www/proj/lego/blocks-desktop', check: false}</code> для того, чтобы закэшировать содержимое тех уровней переопределения, которые не модифицируются в рамках проекта.</li>
+<li><em>(String)[]</em> <strong>sublevelDirectories</strong> — Список директорий ноды с уровнями переопределения. По умолчанию — для каждой ноды добавляется уровень <code>&lt;путь_к_ноде&gt;/blocks</code>, например, для ноды <code>pages/index</code> — <code>pages/index/blocks</code>. Каждый следующий указаный уровень может переопределять предыдущий.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech([ require('enb/techs/levels'), {
+  levels: [
+    {path: 'lego/blocks-desktop', check: false},
+    'desktop.blocks'
+  ].map(function(level) { return config.resolvePath(level); })
+} ]);
+</code></pre>
+
+<h2>node-js</h2>
+
+<p>Технология переехала в пакет <code>enb-diverse-js</code>.</p>
+
+<h2>priv-js</h2>
+
+<p>Технология переехала в пакет <code>enb-priv-js</code>.</p>
+
+<h2>priv-js-i18n</h2>
+
+<p>Технология переехала в пакет <code>enb-priv-js</code>.</p>
+
+<h2>priv-js-i18n-all</h2>
+
+<p>Технология переехала в пакет <code>enb-priv-js</code>.</p>
+
+<h2>pub-js-i18n</h2>
+
+<p>Технология переехала в пакет <code>enb-priv-js</code>.</p>
+
+<h2>symlink</h2>
+
+<p>Создает симлинк из одного таргета в другой. Может, например, использоваться для построения <code>_?.css</code> из <code>?.css</code> для development-режима.</p>
+
+<p><strong>Опции</strong></p>
+
+<ul>
+<li><em>String</em> <strong>fileTarget</strong> — Исходный таргет. Обязательная опция.</li>
+<li><em>String</em> <strong>symlinkTarget</strong> — Результирующий таргет. Обязательная опция.</li>
+</ul>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>nodeConfig.addTech([ require('enb/techs/symlink'), {
+  fileTarget: '?.css',
+  symlinkTarget: '_?.css'
+} ]);
+</code></pre>
+
+<h2>vanilla-js</h2>
+
+<p>Технология переехала в пакет <code>enb-diverse-js</code>.</p>
+
+<h2>xsl</h2>
+
+<p>Технология переехала в пакет <code>enb-lego-xml</code>.</p>
+
+<h2>xsl-2lego</h2>
+
+<p>Технология переехала в пакет <code>enb-lego-xml</code>.</p>
+
+<h2>xsl-convert2xml</h2>
+
+<p>Технология переехала в пакет <code>enb-lego-xml</code>.</p>
+
+<h2>xsl-html5</h2>
+
+<p>Технология переехала в пакет <code>enb-lego-xml</code>.</p>
+
+<h2>xsl-html5-i18n</h2>
+
+<p>Технология переехала в пакет <code>enb-lego-xml</code>.</p>
+
+<h2>xslt</h2>
+
+<p>Технология переехала в пакет <code>enb-lego-xml</code>.</p>
+
+<h2>Как написать свою технологию</h2>
+
+<p>С версии 0.8 технологии рекомендуется писать с использованием хэлпера <code>BuildFlow</code>.</p>
+
+<p>Исходный код хэлпера: https://github.com/enb-make/enb/blob/master/lib/build-flow.js</p>
+
+<p>В данном руководстве охвачены не все возможности <code>BuildFlow</code>. Полный перечень методов с описанием находится
+в JSDoc файла <code>build-flow.js</code>.</p>
+
+<h3>Теория</h3>
+
+<p>Цель технологии — собирать таргет в ноде. Например, технология <code>css</code> может собрать <code>index.css</code> в ноде <code>pages/index</code>
+на основе <code>css</code>-файлов по уровням переопределения.</p>
+
+<p>Каждая технология умеет принимать настройки.
+Хэлпер <code>BuildFlow</code> способствует тому, чтобы максимальное количество параметров было настраиваемым.</p>
+
+<p>Технологии могут использовать результат выполнения других технологий. Например, список исходных <code>css</code>-файлов
+строится с помощью технологии <code>files</code>.</p>
+
+<p>В общем случае, технологии создавать несложно. Бывают необычные ситуации.
+В этом руководстве я постараюсь охватить и такие случаи.</p>
+
+<h3>Технология для склеивания файлов по суффиксу</h3>
+
+<p>В общем случае технология для склеивания файлов по нужному суффиксу выглядит следующим образом:</p>
+
+<pre><code>module.exports = require('enb/lib/build-flow').create() // Создаем инстанцию BuildFlow
+    .name('js') // Выбираем имя для технологии
+    .target('target', '?.js') // Имя опции для задания имени результирующего файла и значение по умолчанию
+    .useFileList('js') // Указываем, какие суффиксы нас интересуют при сборке
+    .justJoinFilesWithComments() // Еще один хэлпер. Склеивает результат, обрамляя комментариями вида /* ... */
+                                 // в которых указывается путь к исходному файлу, из которого был сформирован фрагмент.
+    .createTech(); // Создаем технологию с помощью хэлпера
+</code></pre>
+
+<p>Этот пример, конечно очень общий и слишком упрощенный.</p>
+
+<p>Рассмотрим аналог этой технологии без использования <code>justJoinFilesWithComments</code>:</p>
+
+<pre><code>var Vow = require('vow'); // Используемая в ENB библиотека промисов
+var vowFs = require('vow-fs'); // Работа с файловой системой на основе Vow
+
+module.exports = require('enb/lib/build-flow').create()
+    .name('js')
+    .target('target', '?.js')
+    .useFileList('js')
+    .builder(function(jsFiles) { // Будем возвращать промис, чтобы ENB ждал выполнения асинхронной технологии
+        var node = this.node; // Сохраняем ссылку на инстанцию класса `Node`.
+        return Vow.all(jsFiles.map(function(file) { // Ждем выполнения всех промисов
+            return vowFs.read(file.fullname, 'utf8').then(function(data) { // Читаем каждый исходный файл
+                var filename = node.relativePath(file.fullname); // Получаем путь относительно ноды
+                // Строим фрагменты из содержимого исходных файлов
+                return '/* begin: ' + filename + ' *' + '/\n' + data + '\n/* end: ' + filename + ' *' + '/';
+            });
+        })).then(function(contents) { // Получили результат обработки всех исходных файлов
+            return contents.join('\n'); // Объединяем полученные фрагменты с помощью перевода строки
+        });
+    })
+    .createTech();
+</code></pre>
+
+<p>Так как мы использовали метод <code>useFileList</code>, в <code>builder</code> пришел аргумент со списком файлов по указанному суффиксу.
+Каждый <code>use</code>-метод добавляет аргумент в <code>builder</code>. Тип и содержимое аргументов зависят от того, какой <code>use</code>-метод был
+использован.</p>
+
+<p>Добавим к получившейся технологии файлы интернационализации:</p>
+
+<pre><code>var Vow = require('vow'); // Используемая в ENB библиотека промисов
+var vowFs = require('vow-fs'); // Работа с файловой системой на основе Vow
+
+module.exports = require('enb/lib/build-flow').create()
+    .name('js')
+    .target('target', '?.js')
+    .defineRequiredOption('lang') // Определяем обязательную опцию lang для задания языка
+    .useFileList('js')
+
+<pre><code>.useSourceText('allLangTarget', '?.lang.all.js') // Подключаем общую для всех языков интернационализацию,
+                                                 // используя метод useSourceText, который добавляет в
+                                                 // builder содержимое указанного файла в виде аргумента
+
+.useSourceText('langTarget', '?.lang.{lang}.js') // Подключаем кейсеты конкретного языка;
+                                                 // здесь используется значение опции lang для того,
+                                                 // чтобы сформировать значение по умолчанию
+
+.builder(function(jsFiles, allLangText, langText) {
+    var node = this.node;
+    return Vow.all(jsFiles.map(function(file) {
+        return vowFs.read(file.fullname, 'utf8').then(function(data) {
+            var filename = node.relativePath(file.fullname);
+            return '/* begin: ' + filename + ' *' + '/\n' + data + '\n/* end: ' + filename + ' *' + '/';
+        });
+    })).then(function(contents) {
+        return contents
+            .concat([allLangText, langText]) // Добавляем фрагменты содержимого файлов интернационализации
+            .join('\n');
+    });
+})
+.createTech();
+</code></pre>
+</code></pre>
+
+<h3>Технология для склеивания нескольких целей</h3>
+
+<p>Рассмотрим готовый пример:</p>
+
+<pre><code>// В данном примере строится локализованный priv.js
+module.exports = require('enb/lib/build-flow').create()
+    .name('priv-js-i18n')
+    .target('target', '?.{lang}.priv.js')
+    .defineRequiredOption('lang')
+
+<pre><code>// Все эти цели подготавливаются другими технологиями:
+
+.useSourceFilename('allLangTarget', '?.lang.all.js') // Устанавливаем зависимость от имени файла
+                                                     // общей интернационализации
+
+.useSourceFilename('langTarget', '?.lang.{lang}.js') // Устанавливаем зависимость от имени файла
+                                                     // конкретного языка
+
+.useSourceFilename('privJsTarget', '?.priv.js') // Устанавливаем зависимость от имени файла
+                                                // priv-js файла
+
+.justJoinFilesWithComments() // Пользуемся хэлпером для склеивания
+
+.createTech();
+</code></pre>
+</code></pre>
+
+<p>Реализуем склеивание без хэлпера:</p>
+
+<pre><code>module.exports = require('enb/lib/build-flow').create()
+    .name('priv-js-i18n')
+    .target('target', '?.{lang}.priv.js')
+    .defineRequiredOption('lang')
+    .useSourceFilename('allLangTarget', '?.lang.all.js')
+    .useSourceFilename('langTarget', '?.lang.{lang}.js')
+    .useSourceFilename('privJsTarget', '?.priv.js')
+
+<pre><code>.builder(function(allLangFilename, langFilename, privJsFilename) {
+    var node = this.node;
+    // Перебираем исходные файлы
+    return Vow.all([allLangFilename, langFilename, privJsFilename].map(function(absoluteFilename) {
+        // Читаем каждый исходный файл
+        return vowFs.read(absoluteFilename, 'utf8').then(function(data) {
+            // Получаем относительный путь к файлу
+            var filename = node.relativePath(absoluteFilename);
+
+            // Формируем фрагмент
+            return '/* begin: ' + filename + ' *' + '/\n' + data + '\n/* end: ' + filename + ' *' + '/';
+        });
+    })).then(function(contents) {
+        return contents.join('\n'); // Склеиваем фрагменты
+    });
+})
+
+.createTech();
+</code></pre>
+</code></pre>
+
+<h3>Зависимости от файлов, не входящих в сборку</h3>
+
+<p>Например, нам надо добавить модульную систему в начало какого-нибудь файла и сохранить результат под новым именем:</p>
+
+<pre><code>var vowFs = require('vow-fs'); // Подключаем модуль для работы с файловой системой
+var path = require('path'); // Подключаем утилиты работу с путями
+
+module.exports = require('enb/lib/build-flow').create()
+    .name('prepend-modules')
+    .target('target', '?.js')
+    .defineRequiredOption('source') // Указываем обязательную опцию
+    .useSourceText('source', '?') // Устанавливаем зависимость от содержимого цели, задаваемой опцией source
+    .needRebuild(function(cache) { // Указываем дополнительную проверку кэша
+        // В данном случае модульная система не находится в исходных уровнях переопределения,
+        // но ее можно найти в пакете ym; для того, чтобы пересборка правильно работало в случае
+        // изменения содержимого файла modules.js, добавляем проверку
+        this._modulesFile = path.join(__dirname, '..', 'node_modules', 'ym', 'modules.js'); // Формируем путь
+        return cache.needRebuildFile( // Проверяем, изменился ли файл
+            'modules-file', // Ключ для кэширования данных о файле; должен быть уникален в рамках технологии
+            this._modulesFile // Путь к файлу, для которого необходимо проверить кэш
+        );
+    })
+    .saveCache(function(cache) { // Сохраняем в кэш данные об использованном файле
+        cache.cacheFileInfo( // Сохраняем в кэш информацию о файле
+            'modules-file', // Ключ для кэширования данных о файле; должен быть уникален в рамках технологии
+            this._modulesFile // Путь к файлу, для которого необходимо проверить кэш
+        );
+    })
+    .builder(function(preTargetSource) {
+        // Считываем содержимое файла модульной системы
+        return vowFs.read(this._modulesFile, 'utf8').then(function(modulesRes) {
+            return modulesRes + preTargetSource; // Объединяем результаты
+        });
+    })
+    .createTech();
+</code></pre>
+
+<h3>То же самое, но чуть-чуть иначе</h3>
+
+<p>Время от времени возникают ситуации, когда надо немного дополнить существующие технологии.</p>
+
+<p>Например, нам нравится, как работает технология <code>css</code>:</p>
+
+<pre><code>module.exports = require('enb/lib/build-flow').create()
+    .name('css')
+    .target('target', '?.css')
+    .useFileList('css')
+    .builder(function(cssFiles) {
+        // ...
+    })
+    .methods({
+        // ...
+    })
+    .createTech();
+</code></pre>
+
+<p>В каждой технологии, сделанной с помощью <code>BuildFlow</code>, есть метод <code>buildFlow()</code>, который можно вызвать для того,
+чтобы создать новую технологию на основе функционала существующей.</p>
+
+<p>В какой-то момент нам понадобилось вместе с суффиксами <code>css</code> собирать еще и <code>light.css</code>.
+Для этого надо написать новую технологию, заимствуя функционал старой:</p>
+
+<pre><code>module.exports = require('enb/techs/css').buildFlow()
+    .name('css-light') // Изменяем имя
+    .useFileList(['css', 'light.css']) // Изменяем нужные параметры
+    .createTech();
+</code></pre>
+
+<h2>Node API</h2>
+
+<p>Каждой технологии в <code>init</code> приходит инстанция ноды, для которой необходимо собирать таргеты.
+Через ноду технология взаимодействует с процессом сборки.</p>
+
+<p>Основные методы класса Node:</p>
+
+<h2>node.getTargetName</h2>
+
+<pre><code>// Возвращает имя таргета ноды без суффикса. Например, для ноды 'pages/index' результат — index.
+String Node::getTargetName()
+// Возвращает имя таргета ноды с суффиксом. Например, для ноды 'pages/index' с суффиксом 'js' результат — 'index.js'.
+String Node::getTargetName(String suffix)
+</code></pre>
+
+<h2>node.unmaskTargetName</h2>
+
+<pre><code>// Демаскирует имя таргета ноды. Например, для ноды 'pages/index' и maskedTargetName='?.css', результат — 'index.css'.
+String Node::unmaskTargetName(String maskedTargetName)
+</code></pre>
+
+<h2>node.resolvePath</h2>
+
+<pre><code>// Возвращает абсолютный путь к таргету.
+String Node::resolvePath(String targetName)
+</code></pre>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>var fs = require('fs');
+fs.writeFileSync(this.node.resolvePath(this.node.getTargetName('js')), 'alert("Hello World!");', 'utf8');
+</code></pre>
+
+<h2>node.resolveTarget</h2>
+
+<pre><code>// Оповещает ноду о том, что таргет собран. Опционально принимает результат сборки.
+// Результатом может быть любой объект, который может быть полезен другим технологиям для продолжения сборки.
+undefined Node::resolveTarget(String targetName[, Object result])
+</code></pre>
+
+<p><strong>Примеры</strong></p>
+
+<pre><code>// #1
+this.node.resolveTarget('index.css');
+
+// #2 Получаем имя таргета динамически с помощью суффикса.
+this.node.resolveTarget(this.node.getTargetName('css'));
+
+// #3 Получаем имя таргета путем демаскирования таргета.
+this.node.resolveTarget(this.node.unmaskTargetName('?.css'));
+
+// #4 Передаем значение.
+var target = this.node.unmaskTargetName('?.deps.js'),
+    targetPath = this.node.resolvePath(target);
+delete require.cache[targetPath]; // Избавляемся от кэширования в nodejs.
+this.node.resolveTarget(target, require(targetPath));
+</code></pre>
+
+<h2>node.rejectTarget</h2>
+
+<pre><code>// Оповещает ноду о том, что таргет не может быть собран из-за ошибки.
+undefined Node::rejectTarget(String targetName, Error error)
+</code></pre>
+
+<p><strong>Примеры</strong></p>
+
+<pre><code>// #1
+this.node.rejectTarget('index.css', new Error('Could not find CSS Tools.'));
+
+// #2 Получаем имя таргета динамически с помощью суффикса.
+this.node.rejectTarget(this.node.getTargetName('css'), new Error('Could not find CSS Tools.'));
+</code></pre>
+
+<h2>node.requireSources</h2>
+
+<pre><code>// Требует у ноды таргеты для дальнейшей сборки, возвращает промис.
+// Промис выполняется, возвращая массив результатов, которыми резолвились требуемые таргеты.
+// ВАЖНО: Не все технологии резолвят таргеты с результатом.
+// В данный момент резолвят с результатом технологии: levels, deps*, files.
+Promise(Object[]) Node::requireSources(String[] targetNames)
+</code></pre>
+
+<p><strong>Пример</strong></p>
+
+<p>Например, нам надо объединить в один файл <code>index.css</code> и <code>index.ie.css</code> и записать в <code>index.all.css</code>.</p>
+
+<pre><code>var vowFs = require('vow-fs');
+// ...
+  build: function() {
+    var _this = this;
+    return this.node.requireSources(['index.css', 'index.ie.css']).then(function() {
+      return Vow.all([vowFs.read(_this.node.resolvePath('index.css'), 'utf8'), vowFs.read(_this.node.resolvePath('index.ie.css'), 'utf8')]).then(function(res) {
+        return vowFs.write(_this.node.resolvePath('index.all.css'), res.join('\n'), 'utf8').then(function() {
+          _this.node.resolveTarget('index.all.css');
+        });
+      });
+    });
+  }
+// ...
+</code></pre>
+
+<p>Пример использования: <a href="/mdevils/enb/blob/master/techs/deps.js#L31">Технология deps</a></p>
+
+<h2>node.relativePath</h2>
+
+<pre><code>// Возвращает относительный путь к таргету относительно ноды.
+String Node::relativePath(String targetName)
+</code></pre>
+
+<p>Пример использования: <a href="/mdevils/enb/blob/master/techs/css-includes.js#L16">Технология css-includes</a></p>
+
+<h2>node.getDir</h2>
+
+<pre><code>// Возвращает полный путь к папке ноды.
+String Node::getDir()
+</code></pre>
+
+<h2>node.getRootDir</h2>
+
+<pre><code>// Возвращает полный путь к корневой папке проекта.
+String Node::getRootDir()
+</code></pre>
+
+<h2>node.getLogger</h2>
+
+<p><a href="/mdevils/enb/blob/master/lib/logger.js">Logger</a></p>
+
+<pre><code>// Возвращает инстанцию логгера для ноды.
+Logger Node::getLogger()
+</code></pre>
+
+<p><strong>Пример</strong></p>
+
+<pre><code>this.node.getLogger().log('Hello World');
+</code></pre>
+
+<p>Пример использования: <a href="/mdevils/enb/blob/master/techs/deps.js#L79">Технология deps</a></p>
+
+<h2>node.getNodeCache</h2>
+
+<p><a href="/mdevils/enb/blob/master/lib/cache/cache.js">Cache</a></p>
+
+<pre><code>// Возвращает инстанцию кэша для таргета ноды.
+Cache Node::getNodeCache(String targetName)
+</code></pre>
+
+<p>Кэширование необходимо для того, чтобы избегать повторной сборки файлов, для которых сборка не требуется. Кэшируется время изменения исходных и конечных файлов после окончания сборки каждой технологии. Логика кэширования реализуется в каждой технологии индивидуально для максимальной гибкости.</p>
+
+<p>С помощью методов <code>Boolean needRebuildFile(String cacheKey, String filePath)</code> и <code>Boolean needRebuildFileList(String cacheKey, FileInfo[] files)</code> производится валидация кэша.</p>
+
+<p>С помощью методов <code>undefined cacheFileInfo(String cacheKey, String filePath)</code> и <code>undefined cacheFileList(String cacheKey, FileInfo[] files)</code> производится сохранение информации о файлах в кэш.</p>
+
+<p>Пример использования:</p>
+
+<ul>
+<li>Валидация кэша: <a href="/mdevils/enb/blob/master/techs/deps.js#L33">Технология deps</a></li>
+<li>Кэширование результатов сборки: <a href="/mdevils/enb/blob/master/techs/deps.js#L73">Технология deps</a></li>
+</ul>  </td></tr></tbody></table><div id="generated">generated Wed Jun 25 2014 13:48:06 GMT+0400 (MSK)  </div></div></body></html>
